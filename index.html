@@ -8,13 +8,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     .navbar{
-    border-radius: 0
+    border-radius : 0
     }
   </style>
     <title>My Resume</title>
     </head>
-<body style="background-image: url(Portfolio/wood%20texture%20dark%20planks.jpg)">
+<body style="background-image: url(wood%20texture%20dark%20planks.jpg)">
     
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
     <!------------------>
     <!--------- Navigation Bar--------->
     
@@ -24,9 +27,14 @@
                  <nav class="navbar navbar-default">
                     <div class="container">
                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                             <span class="icon-bar"></span>
+                             <span class="icon-bar"></span>
+                             <span class="icon-bar"></span> 
+                            </button>
                             <a class="navbar-brand" href="#">My Menu</a>
                          </div>
-                            <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav" id="mynavbar">
                                <li><a href="#about_me" class="active">About Me </a></li>
                                <li><a href="#experience">Experience and Skills </a></li>
                                <li><a href="#education">Education And Training </a></li>
@@ -325,12 +333,12 @@
             <strong style="font-size: 15px"><u>Special Intrests</u> : </strong>
             <p></p>
             <div class="btn-group">
-              <button type="button" class="btn btn-info">ASP .NET</button>
-              <button type="button" class="btn btn-info">ADO .NET</button>
-              <button type="button" class="btn btn-info">C#</button>
-              <button type="button" class="btn btn-info">JAVASCRIPT</button>
-              <button type="button" class="btn btn-info">HTML5</button>
-              <button type="button" class="btn btn-info">CSS3</button>
+              <button type="button" class="btn btn-info" style=" border-radius: 3px; margin-top: 1px">ASP .NET</button>
+              <button type="button" class="btn btn-info" style="margin-left: 2px; margin-top: 1px; border-radius: 5px">ADO .NET</button>
+              <button type="button" class="btn btn-info" style="margin-left: 2px; margin-top: 1px; border-radius: 5px">C#</button>
+              <button type="button" class="btn btn-info" style="margin-left: 2px; margin-top: 1px; border-radius: 5px">JAVASCRIPT</button>
+              <button type="button" class="btn btn-info" style="margin-left: 2px; margin-top: 1px; border-radius: 5px">HTML5</button>
+              <button type="button" class="btn btn-info" style="margin-left: 2px; margin-top: 1px; border-radius: 5px">CSS3</button>
             </div>
         </div>
         <div class="panel-body">
@@ -379,7 +387,12 @@
         </div>
     </div>
      <!----------Contact Section-------->
-     <!------------------>  
+     <!------------------> 
+
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+       
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
