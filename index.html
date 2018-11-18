@@ -397,17 +397,25 @@
      
      <!------------------>
      <!----------Scroll Down Hide Navbar--------> 
-     <script>
-       var prevpos = window.pageYOffset();
-       window.onscroll = function(){
-         var curtpos = window.pageYOffset();
-        if(prevpos > curtpos)
-        { document.getElementById("navbar1").style.top = "0" ;}
-        else
-        { document.getElementById("navbar1").style.top = "-50px" ;}
-         prevpos  = curtpos;
-       }
-     </script>
+       <script> 
+     var prvpos = window.pageYOffset;
+     window.onscroll = function funme(){
+        var curpos = window.pageYOffset; 
+         if(prvpos < curpos){ 
+         document.getElementById("navbar1").style.display="none";
+         document.getElementById("navbar1").className="fixed";
+         }
+         else if(prvpos > curpos && curpos != 0 ){
+             document.getElementById("navbar1").style.display="block";
+             document.getElementById("navbar1").className="navbar navbar-default navbar-fixed-top";
+         }
+         else if(curpos == 0 ){
+             document.getElementById("navbar1").style.display="block";
+             document.getElementById("navbar1").className="navbar navbar-default";
+         }
+         prvpos = curpos;
+     }
+    </script>
      <!----------Scroll Down Hide Navbar-------->
      <!------------------> 
    
