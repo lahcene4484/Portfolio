@@ -397,13 +397,13 @@
      
      <!------------------>
      <!----------Scroll Down Hide Navbar--------> 
-       <script> 
+     <script> 
      var prvpos = window.pageYOffset;
      window.onscroll = function funme(){
         var curpos = window.pageYOffset; 
          if(prvpos < curpos){ 
          document.getElementById("navbar1").style.display="none";
-         document.getElementById("navbar1").className="fixed";
+         document.getElementById("navbar1").className="navbar navbar-default";
          }
          else if(prvpos > curpos && curpos != 0 ){
              document.getElementById("navbar1").style.display="block";
